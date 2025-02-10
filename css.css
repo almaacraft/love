@@ -1,0 +1,102 @@
+html{height: 100%;}
+#wrapper {
+  background: #000 no-repeat 50% 68%;
+  background-size: 400px auto;
+  background-attachment: fixed;
+  margin:0 auto;
+  padding:0;
+  width: 100%;
+  min-height:600px;
+  height: 100%;
+}
+#wrapper .globalCompositeOperation{
+  color: aqua;
+  text-shadow: 1px 0px 1px #000;
+  text-align: center;
+  visibility: hidden;
+}
+html{
+  background-color: #000E14;
+  background: #151218 repeat-x 0% 0%;
+  background-size: 320px auto;
+}
+body {
+  margin: 0;
+  overflow: hidden;
+  background: transparent url(http://i12.pixs.ru/storage/3/3/3/smokepng_9484249_31251333.png) no-repeat 50% -50%;
+  background-size: auto;
+  font-family: Courier, monospace;
+  font-size: 14px;
+  height: 100%;
+}
+
+#ray,#heart{display: block;margin: 0 auto;}
+
+#fig{
+    cursor: pointer;
+}
+.front{
+	width: 320px;
+    height: 320px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.canvasBox{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.canvasBox:after{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 170px;
+    position: absolute;
+    top: 80px;
+    left: auto;
+    z-index: 0;
+    opacity: 0.50;
+}
+.canvasBox:nth-of-type(1):after{
+    background: #000 no-repeat 50% 50%;
+    background-size: 110px auto;
+    left: 20px;
+}
+.canvasBox:nth-of-type(2):after{
+    background: #000 no-repeat 50% 50%;
+    background-size: 110px auto;
+    right: 30px;
+}
+.hero-heartbeat{
+    background: #000 no-repeat 50% 0%;
+    background-size: 366px auto;
+    display: block;
+    width: 320px;
+    height: 320px;
+	top: -8px;
+    z-index: 10;
+}
+
+.hero-bkg-animated {
+  -webkit-animation: slide 40s linear infinite;
+}
+.hero-heartbeat-animated {
+  -webkit-animation: heartbeat 20s linear infinite;
+}
+
+@-webkit-keyframes slide {
+    0% { background-position: 0 -50%; }
+    50% { background-position: 100% -50%; }
+	100% { background-position: 0 -50%; }
+}
+
+@-webkit-keyframes heartbeat {
+    0% { opacity: 1; }
+    10% { opacity: 0; }
+	100% { opacity: 1; }
+}
